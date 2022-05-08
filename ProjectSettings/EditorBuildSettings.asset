@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/AngryBirds/AngryBirds.unity
+    guid: c16d839dd4c6afd459369cb31bd2d206
+  - enabled: 1
+    path: Assets/Scenes/AngryBirds/AngryLose.unity
+    guid: a96f9f2a44e1eca4f8c38cce441d7baa
+  - enabled: 1
+    path: Assets/Scenes/AngryBirds/AngryWin.unity
+    guid: 7db3775a94c5f90458f87107b8e2789f
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/WinScreen 6.unity
+    guid: 447cc25dfca3c44499d6cacca224f8ed
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/WinScreen 5.unity
+    guid: 175b40ddaa1f17748955e29c3c76d8ab
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/WinScreen 4.unity
+    guid: 4df7978baae188c4694db98cddc8fd36
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/WinScreen 3.unity
+    guid: 49fcc0bb918f0fb418c7e2367ccd0c78
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/LoseScreen 4.unity
+    guid: 5b85096793243c742a795072df0466e9
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/WinScreen 2.unity
+    guid: bec474d0afddb1042bb073fb43697548
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/WinScreen 1.unity
+    guid: f6b08b68bdcb23e4c8865d7b4ca34560
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/LoseScreen 3.unity
+    guid: 32f43662be811014eb603f64ad8b41f3
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/Level5.unity
+    guid: 499a34238362b7f4b81b3da7f0039bf3
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/Level4.unity
+    guid: b067290aa2490fb4193283abeb12b318
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/Level3.unity
+    guid: 80317972aca76c14594d1ec59704f70d
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/Level2.unity
+    guid: d6281cc4d11ff6f49a98df70adb47731
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/LoseScreen 1.unity
+    guid: 29f61362d3ace4b46882ac10ce4c1d02
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/LoseScreen 2.unity
+    guid: 4d9a3af932776ff48b8607b97969ccad
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/Level1.unity
+    guid: 73d6da71b4cbc0f41b4558d77794b5d3
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/MainMenu.unity
+    guid: 4f1ef662fbf8315469bef836dea7a6e8
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/Intro6.unity
+    guid: 020c4aaeee1824045bb71a369aa50518
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/Intro5.unity
+    guid: 5e9640063d7b19f45964c0b41ac51fc8
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/Intro3.unity
+    guid: 7f6a1c9692ef0234faea168d577424a7
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/Intro1.unity
+    guid: 6a4ce6c902c303448aca3d960630cfd0
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/Intro2.unity
+    guid: 01831f672b2c06a4b8e051cafb776cd6
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/Intro4.unity
+    guid: 4355a4167743fcf498b40ed95b56b59f
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/DorIntro.unity
+    guid: 9e7434e2d92a287499be7378d84742aa
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/DorIntro 1.unity
+    guid: 6b5e0a518a78657418f2e48678aaa3c9
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/Credits 1.unity
+    guid: c5585bbcfc6bcf646a7d5f1875012fc5
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/Credits.unity
+    guid: 9d6267a8b40eec146ac4ff3437c55266
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/LevelDor.unity
+    guid: f4de070153ebf034d88d7c729ac654a0
+  - enabled: 1
+    path: Assets/Scenes/MicroScenes/GarfieldIntro.unity
+    guid: 7c1156b990cc3cc45b9459c649033e7a
+  m_configObjects: {}
