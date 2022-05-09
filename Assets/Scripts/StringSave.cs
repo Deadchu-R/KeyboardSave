@@ -44,6 +44,7 @@ public class StringSave : MonoBehaviour
         EasterEggs();
     }
 
+    // TO DO: add breaks...
     public void EasterEggs()
     {
         foreach (string line in File.ReadLines(fileLocation))
