@@ -44,7 +44,7 @@ public class StringSave : MonoBehaviour
         EasterEggs();
     }
 
-    // TO DO: add breaks...
+   
     public void EasterEggs()
     {
         foreach (string line in File.ReadLines(fileLocation))
@@ -54,34 +54,40 @@ public class StringSave : MonoBehaviour
                 reactText.text = "cake";
                 imageContainerObject.SetActive(true);
                 SetImage(4);
+                break;
             }
             if (line.Contains("Sean"))
             {
                 reactText.text = "Peysakhovitz";
                 imageContainerObject.SetActive(true);
                 SetImage(2);
+                break;
             }
             if (line.Contains("Amir"))
             {
                 reactText.text = "Kovalenko";
                 imageContainerObject.SetActive(true);
                 SetImage(3);
+                break;
             }
             if (line.Contains("Roee"))
             {
                 reactText.text = "Tal";
                 imageContainerObject.SetActive(true);
                 SetImage(1);
+                break;
             }
             if (line.Contains("UnrealEngine"))
             {
                 reactText.text = "No!";
+                break;
             }
             if (line.Contains("The Stanley Parable"))
             {
                 reactText.text = "Worker 427";
                 imageContainerObject.SetActive(true);
                 SetImage(5);
+                break;
             }
             if (line.Contains("Perry"))
             {
@@ -89,6 +95,7 @@ public class StringSave : MonoBehaviour
                 imageContainerObject.SetActive(true);
                 SetImage(0);
                 SetMusic(0);
+                break;
             }
             if (line.Contains("Sanic"))
             {
@@ -96,6 +103,7 @@ public class StringSave : MonoBehaviour
                 imageContainerObject.SetActive(true);
                 SetImage(8);
                 SetMusic(1);
+                break;
             }
             if (line.Contains("Arabs are terrorists"))
             {
@@ -103,24 +111,29 @@ public class StringSave : MonoBehaviour
                 reactText2.text = "Me too (,-,)";
                 imageContainerObject.SetActive(true);
                 SetImage(7);
+                break;
             }
             if (line.Contains("Angry Birds"))
             {
                 SceneManager.LoadScene("AngryBirds");
+                break;
             }
             if (line.Contains("MicroPlatina"))
             {
                 SceneManager.LoadScene("Level1");
+                break;
             }
             if (line.Contains("Portal 2") || line.Contains("portal 2") || line.Contains("portal2") || line.Contains("Portal2") || line.Contains("Portal") || line.Contains("portal"))
             {
                 reactText.text = "Spaaaaaaaaaaace";            
                 imageContainerObject.SetActive(true);
-                SetImage(5);
+                SetImage(6);
+                break;
             }
             if (line.Contains("Save String"))
             {
                 reactText.text = "Didn't Save ";
+                break;
             }
 
         }
