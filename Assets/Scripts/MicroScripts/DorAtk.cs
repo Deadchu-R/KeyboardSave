@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 public class DorAtk : MonoBehaviour
 {
     public int DorAtkR = 3;

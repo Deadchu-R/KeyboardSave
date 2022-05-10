@@ -1,24 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class StringSave : MonoBehaviour
-{
-    [SerializeField] InputField input;
-    string fileLocation;
-    [SerializeField] Text reactText;
-    [SerializeField] Text reactText2;
-    string saveMe;
-    [SerializeField] Sprite[] images;
-    [SerializeField] Image imageContainer;
-    [SerializeField] AudioClip[] audioClips;
-    [SerializeField] AudioSource music;
-    [SerializeField] GameObject imageContainerObject;
+{ 
+   private string _fileLocation;
+    private string _saveMe;
+    [SerializeField] private InputField input;
+    [SerializeField] private Text reactText;
+    [SerializeField] private Text reactText2;
+    [SerializeField] private Sprite[] images;
+    [SerializeField] private Image imageContainer;
+    [SerializeField] private AudioClip[] audioClips;
+    [SerializeField] private AudioSource music;
+    [SerializeField] private GameObject imageContainerObject;
 
-    public void SetMusic(int index)
+    private void SetMusic(int index)
     {
         if (audioClips.Length >= index)
         {
@@ -26,7 +24,7 @@ public class StringSave : MonoBehaviour
         }
         music.Play();
     }
-    public void SetImage(int index)
+    private void SetImage(int index)
     {
         if (images.Length >= index)
         {
@@ -36,18 +34,18 @@ public class StringSave : MonoBehaviour
     public void SaveString()
     {
         
-        saveMe = input.text;
-        File.Delete(fileLocation);
-        File.AppendAllText(fileLocation, saveMe);
-        Debug.Log("saved" + saveMe);
+        _saveMe = input.text;
+        File.Delete(_fileLocation);
+        File.AppendAllText(_fileLocation, _saveMe);
+        Debug.Log("saved" + _saveMe);
 
         EasterEggs();
     }
 
    
-    public void EasterEggs()
+    private void EasterEggs()
     {
-        foreach (string line in File.ReadLines(fileLocation))
+        foreach (string line in File.ReadLines(_fileLocation))
         {
             if (line.Contains("Cake") || line.Contains("cake"))
             {
@@ -130,30 +128,26 @@ public class StringSave : MonoBehaviour
                 SetImage(6);
                 break;
             }
-            if (line.Contains("Save String"))
-            {
-                reactText.text = "Didn't Save ";
-                break;
-            }
+
+            if (!line.Contains("Save String")) continue;
+            reactText.text = "Didn't Save ";
+            break;
 
         }
     }
-    void Start()
+    private void Start()
     {
-        fileLocation = Application.persistentDataPath + "/file.txt";
+        _fileLocation = Application.persistentDataPath + "/file.txt";
     }
     public void LoadString()
     {
-        if (File.Exists(fileLocation))
-        {
-            //string savedText = fileLocation;
-            string savedText = File.ReadAllText(fileLocation);
-            input.text = savedText;
-            Debug.Log("loaded" + File.ReadAllText(Application.persistentDataPath + "/file.txt"));
-            Debug.Log("loaded file location" + fileLocation);
-            EasterEggs();
-
-        }
+        if (!File.Exists(_fileLocation)) return;
+        //string savedText = fileLocation;
+        string savedText = File.ReadAllText(_fileLocation);
+        input.text = savedText;
+        Debug.Log("loaded" + File.ReadAllText(Application.persistentDataPath + "/file.txt"));
+        Debug.Log("loaded file location" + _fileLocation);
+        EasterEggs();
     }
 
 
